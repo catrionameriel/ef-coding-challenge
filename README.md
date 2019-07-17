@@ -1,22 +1,49 @@
-# ef-coding-challenge
-# Introduction:
-We gather raw HTML pages from retail sites and then extract specific values which we then persist in an elastic-search datastore.
+# e.fundamentals Coding Challenge Create a Word cloud 
 
-In the attached json output - a standard response to one of our api endpoints - is a representation of a view of supermarket-products in our database as a result of our gather process.  From this we create various views in our web based tool.  
+# Introduction: 
 
-Can you show us how you might create a front end from this data?
+We gather raw HTML pages from retail sites this data is then processed and extracted, one of the fields extracted are product reviews. 
 
-(3 of the fields - urls - are dummy data, and you don’t need to try to use them)
+The example reviews below are an illustration of the types of reviews we may gather.  
+ 
+Your challenge is to process this data and display it in the form of a word cloud. 
+
+# Requirements: 
+
+1. Create a ReactJS component as a tabular view to display a count of the frequency of words found in reviews.  
+
+2. Extend this to display the words as a word cloud where more frequent words are displayed larger on screen than others, you can do this simply by increasing the size of words and displaying them in a table or attempt to do it in a more interesting way, perhaps a use of a charting library.  or pull your own product reviews from a online retailer such as amazon.co.uk
+
+3. You should include suitable unit tests 
+
+Feel free to render as you like bearing in mind we are more interested in your construction of ReactJS components and how this is represented with real data on screen. 
+
+# Notes 
+
+* This should take a couple of hours, no more
+* fork this repo to your own GitHub account and send the link to jordan.dick@ef.uk.com 
+* Learn loads and have fun. Good luck! 
 
 
-# Problems/Challenges:
-1.	Create a reactJS component as a tabular view to render the JSON provided.  Choose a few columns that make sense.
-2.	Extend the single webpage, or create others, to use the data in other interesting ways, perhaps a use of a charting library.
+# Reviews 
 
-Feel free to render as you like, but bear in mind we are more interesting in your constructions of reactJS components and how this is represented in real data on the screen.
-Notes
-
-* Just write the best code you can.
-*	Spend only a couple of hours, not more.
-*	Add the code to your own GitHub account and send the link to  jordan.dick@ef.uk.com
-* Learn loads and have fun. Good luck!
+* A great product for daily use,  
+* Great price. Takes about 10days for delivery 
+* Excellent value - will buy again 
+* Fine, I always use this, was as expected 
+* Good value 
+* excellent product, good value 
+* good 
+* does the job! 
+* Thank you 
+* Great it's that is easy to use  
+* I hated it 
+* arrived on time, excellent product, thank you 
+* quick service great price. 
+* good and refreshing 
+* My daughter is road testing this, but so far it's refreshing  
+* DO NOT BUY THIS PRODUCT  
+* Avoid 
+* Did not notice any difference  
+* Horrible taste  
+* Does its job and shows it works 
