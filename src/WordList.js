@@ -1,80 +1,17 @@
 import React, { Component } from 'react';
-import ReviewData from './data/reviews.json'
-import Blacklist from './data/blacklist.json'
-
-// Review = Array of strings
-// Join all reviews together
-// Remove all annoying characters
-// Make all lowercase
-// make each word a seperate array
-// Filter out two letter words
-// Filter out words from blacklist
-// Create WordCloud object
-// Count words
 
 class WordList extends Component {
   render() {
-    const wordList = this.calculateWordFrequencyIn(ReviewData.reviews);
-    const tableItems = Object.keys(wordList).map((key) => {
+    const list = (this.props.wordList)
+    const tableItems = Object.keys(list).map((key) => {
       return (
         <tr key={key}>
           <td>{key}</td>
-          <td>{wordList[key]}</td>
+          <td>{list[key]}</td>
         </tr>
       )
     });
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="2">Word Cloud</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tableItems}
-        </tbody>
-      </table>
-    );
-  }
-
-  calculateWordFrequencyIn = (reviews) => {
-    const seperatedWords = this.createStringArrayFrom(reviews);
-    const filteredOutSmallWordsList = this.filterOutSmallWordsFrom(seperatedWords);
-    const filteredOutBlackListWords = this.filterOutBlacklistWordsFrom(filteredOutSmallWordsList, Blacklist.blacklist);
-    return this.countWordsIn(filteredOutBlackListWords);
-  }
-
-  createStringArrayFrom = (array) => {
-    const string = this.removePunctuationFrom(array.join());
-    return string.split(' ');
-  }
-
-  removePunctuationFrom = (string) => {
-    const newString = string.replace(/[.,/!$%&*;:'-()0-9]/g, ' ');
-    return newString.toLowerCase();
-  }
-
-  filterOutSmallWordsFrom = (array) => {
-    return array.filter(word => word.length > 2)
-  }
-
-  filterOutBlacklistWordsFrom = (array, blacklist) => {
-     array = array.filter((word) => {
-      return !blacklist.includes(word);
-    });
-    return array;
-  }
-
-  countWordsIn = (array) => {
-    const list = {};
-    array.forEach((word) => {
-      if (!list[word]) {
-        list[word] = 1;
-      } else {
-        list[word] += 1;
-      }
-    });
-    return list;
+    return tableItems;
   }
 }
 
