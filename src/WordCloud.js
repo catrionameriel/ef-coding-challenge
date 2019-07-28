@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
-import WordList from './WordList.js';
+import WordList from './WordList';
 import ReviewData from './data/reviews.json'
 import Blacklist from './data/blacklist.json'
-
-// Review = Array of strings
-// Join all reviews together
-// Remove all annoying characters
-// Make all lowercase
-// make each word a seperate array
-// Filter out two letter words
-// Filter out words from blacklist
-// Create WordCloud object
-// Count words
 
 class WordCloud extends Component {
   render() {

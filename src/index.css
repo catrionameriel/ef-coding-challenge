@@ -1,14 +1,23 @@
-body {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 li {
   list-style-type: none;
 }
 
+p {
+  display: inline-flex;
+  font-family: Helvetica, Arial, sans-serif;
+  justify-content: space-around;
+  margin: 0;
+}
+
 .word-cloud {
   display: flex;
-  flex-direction: column;
+  flex: 1 1 100%;
+  margin: 2em 5em;
+}
+
+.word-cloud-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .blue-text {
@@ -41,4 +50,21 @@ li {
 
 .small-text {
   font-size: 20px
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.center-aligned-text {
+  align-items: center;
+}
+
+.bottom-aligned-text {
+  align-items: flex-end;
+}
+
+.top-aligned-text {
+  align-items: flex-start;
 }
