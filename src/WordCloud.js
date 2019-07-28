@@ -17,16 +17,9 @@ class WordCloud extends Component {
   render() {
     const wordList = this.calculateWordFrequencyIn(ReviewData.reviews);
     return (
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="2">Word Cloud</th>
-          </tr>
-        </thead>
-        <tbody>
+      <div className="word-cloud">
           <WordList wordList={wordList}/>
-        </tbody>
-      </table>
+      </div>
     );
   }
 

@@ -6,6 +6,39 @@ li {
   list-style-type: none;
 }
 
-table {
-  width: 300px;
+.word-cloud {
+  display: flex;
+  flex-direction: column;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.extra-large-text {
+  font-size: 50px
+}
+
+.large-text {
+  font-size: 40px
+}
+
+.medium-text {
+  font-size: 30px
+}
+
+.small-text {
+  font-size: 20px
 }

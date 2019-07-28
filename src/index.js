@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import WordCloud from './WordCloud';
+import App from './App';
 
-ReactDOM.render(<WordCloud />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
