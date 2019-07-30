@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WordList from '../WordList';
+import WordTable from '../WordTable';
 import ReviewData from '../../data/reviews.json'
 import Blacklist from '../../data/blacklist.json'
 import { calculateWordFrequency } from './buildWordList';
@@ -10,6 +11,7 @@ class WordCloud extends Component {
     return (
       <div className="word-cloud">
           <WordList wordList={wordList}/>
+          <WordTable wordList={wordList}/>
       </div>
     );
   }

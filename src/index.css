@@ -11,6 +11,8 @@ p {
 
 .word-cloud {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1 1 100%;
   margin: 2em 5em;
 }
@@ -18,6 +20,16 @@ p {
 .word-cloud-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.word-table {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 50%;
+  margin: 3em;
+}
+
+.word-table-heading {
+  font-size: 18px;
 }
 
 .blue-text {
