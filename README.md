@@ -18,7 +18,7 @@ Your challenge is to process this data and display it in the form of a word clou
 
 Feel free to render as you like bearing in mind we are more interested in your construction of ReactJS components and how this is represented with real data on screen.
 
-# Approach
+# Approach to counting words from JSON
 
 - Review = Array of strings
 - Join all reviews together
@@ -28,4 +28,12 @@ Feel free to render as you like bearing in mind we are more interested in your c
 - Filter out two letter words
 - Filter out words from blacklist
 - Create WordCloud object
-- Count words
+- Count words and push to object
+- Display as table and style
+- Then continue on to create word cloud
+
+# Approach to styling word cloud
+
+- Use count of word to select text class size
+- Randomly select a colour for each word
+- Randomly select a text direction and alignment for each word
